@@ -15,10 +15,12 @@ public class CarroTest01 {
         carro02.ano=1968;
         carro02.modelo="GT 500";
 
+        System.out.println("\nCarro 01");
         System.out.println(carro01.nome);
         System.out.println(carro01.modelo);
         System.out.println(carro01.ano);
 
+        System.out.println("\nCarro 02");
         System.out.println(carro02.nome);
         System.out.println(carro02.modelo);
         System.out.println(carro02.ano);
