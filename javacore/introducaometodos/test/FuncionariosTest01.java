@@ -7,9 +7,7 @@ public class FuncionariosTest01 {
         Funcionarios funcionarios=new Funcionarios();
         funcionarios.name= "Goku";
         funcionarios.idade=50;
-        funcionarios.salario[0]=1200;
-        funcionarios.salario[1]=2800;
-        funcionarios.salario[2]=15200;
+        funcionarios.salario=new double[]{2000,1422,50000};
         funcionarios.imprimir();
         funcionarios.mediaSalarios();
 
