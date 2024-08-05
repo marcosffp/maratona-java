@@ -1,4 +1,4 @@
-package javacore.CSobrecargaMetodos.domain;
+package javacore.DConstrutores.domain;
 
 public class Anime {
     private String tipo;
@@ -7,21 +7,24 @@ public class Anime {
     private String genero;
 
 
-    public Anime(){}
-
-
-    public void init(String nome,String tipo, int episodios){
+    public Anime(String nome,String tipo, int episodios,String genero){
+        System.out.println("Dentro do Construtor");
         this.nome=nome;
         this.tipo=tipo;
         this.episodios=episodios;
-    }
-
-    public void init(String nome,String tipo, int episodios,String genero){
-        this.init(nome, tipo, episodios);
         this.genero=genero;
+
     }
 
+    public Anime(){}
 
+    public void imprimir(Anime anime){
+        System.out.println(anime.getNome());
+        System.out.println(anime.getTipo());
+        System.out.println(anime.getEpisodios());
+        System.out.println(anime.getGenero());
+    }
+    
     public void setGenero(String genero){
         this.genero=genero;
     }
