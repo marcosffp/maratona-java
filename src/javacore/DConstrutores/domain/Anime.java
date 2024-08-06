@@ -5,26 +5,40 @@ public class Anime {
     private int episodios;
     private String nome;
     private String genero;
+    private String estudio;
 
 
-    public Anime(String nome,String tipo, int episodios,String genero){
+    public Anime(String nome,String tipo, int episodios,String genero,String estudio){
         System.out.println("Dentro do Construtor");
         this.nome=nome;
         this.tipo=tipo;
         this.episodios=episodios;
         this.genero=genero;
+        this.estudio=estudio;
 
     }
 
-    public Anime(){}
+    public Anime(){
+        System.out.println("Dentro do construturo sem parametro");
+
+    }
 
     public void imprimir(Anime anime){
         System.out.println(anime.getNome());
         System.out.println(anime.getTipo());
         System.out.println(anime.getEpisodios());
         System.out.println(anime.getGenero());
+        System.out.println(anime.getEstudio());
     }
-    
+
+    public void setEstudio(String estudio){
+        this.estudio=estudio;
+    }
+
+    public String getEstudio(){
+        return this.estudio;
+    }
+
     public void setGenero(String genero){
         this.genero=genero;
     }
